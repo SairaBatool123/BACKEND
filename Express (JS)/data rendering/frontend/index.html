@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather App</title>
+</head>
+<body>
+  <h1>Weather Data Rendering Using "FRONTEND AND BACKEND"</h1>
+
+<!-- for input we create a form and onsubmit use to send a req. on server and return false try to not refresh the page while this process happens -->
+
+  <form onsubmit="getWeather(); return false">
+    <label for="cityName">City Name:
+      <input type="text" id="cityName">
+    </label>
+    <button type="submit">Submit</button>
+  </form>
+
+<!-- Display Result Here! -->
+ 
+  <div id="result">
+  
+  </div>
+  
+  <script type="module" src="app.js"></script>
+</body>
+</html>
